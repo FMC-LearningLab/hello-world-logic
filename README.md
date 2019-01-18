@@ -1,0 +1,7 @@
+- Learning Lab docs: https://github.github.com/learning-lab-equipment/#/
+- Learning Lab actions: https://github.github.com/learning-lab-equipment/#/actions/
+- Architecture on GHE: https://github.github.com/learning-lab-equipment/#/6-1-architecture
+- Videos: 
+    - **GitHub Learning Lab: The User’s Journey** https://vimeo.com/297492562/9aaac2826f
+    - **GitHub Learning Lab: Creating courses and the Organization Experience** https://vimeo.com/297492967/25275d8630
+- Take some public courses: https://lab.github.com
