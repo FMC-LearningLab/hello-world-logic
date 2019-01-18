@@ -33,3 +33,6 @@ steps:
     - type: respond
       issue: Test issue 1
       with: go-to-pr.md
+      data:
+        title: '%payload.pull_request.title%'
+        url: '%payload.pull_request.html_url%'
