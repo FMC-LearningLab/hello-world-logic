@@ -1,0 +1,35 @@
+# metadata about the course, displayed on the course landing page
+title: A hello world course
+tagline: A hello world course
+description: A hello world course
+tags:
+  - hello world
+
+# a pointer to our template repository, and the name of the repository when it's created for the learner
+template:
+  name: day-1
+  repo: hello-world-template
+
+before:
+  # protect the master branch for the learner
+- type: updateBranchProtection
+
+  # create an issue for the learner 
+- type: createIssue
+  title: Test issue 1
+  body: welcome-content.md
+
+steps: 
+
+  # 1: learner adds name to the readme
+  - title: Add your name to the README
+    description: Add your name to the README
+    event: pull_request.opened # the github event that we're listening for
+    actions: # the result of the learner initiating the event
+
+    - type: respond
+      with: you-did-it.md
+
+    - type: respond
+      issue: Test issue 1
+      with: go-to-pr.md
